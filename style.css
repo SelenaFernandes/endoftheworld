@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cartao{
+    background-color: pink;
+}
+#player {
+    background-color: white;
+    width: 90%;
+    max-width: 375px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+     0px 3px 1px -2px rgba(0, 0, 0, 0.12), 
+     0px 1px 5px 0px rgba(0, 0, 0, 2) ;
+}
+.card{
+    box-shadow: none;
+    margin: 0;
+}
+h4{
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+h5{
+    font-family: 'Pacifico', cursive;
+}
+#nome{
+    font-family: 'Pacifico', cursive;
+}
+.card-image {
+    background: url("https://placehold.it/500") no-repeat center center /cover;
+    height: 200px;
+
+}
+audio {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#playpause{
+padding: 10px;
+display: flex ;
+justify-content: center;
+height: 25px;
+width: 25px;
+align-items: center;
+color: red;
+border-radius: 35px;
+}
+
+#playpause:hover {
+    background-color: black;
+}

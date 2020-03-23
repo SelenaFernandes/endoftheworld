@@ -7,23 +7,21 @@ window.player = {
     currentAudio : {},
     currentPlaying : 0,
     start(){
-       this.update();
-
-    this.audio.onended = () => this.next();
-
+      this.update();
+      this.audio.onended = () => this.next();
     },
  next(){
     this.currentPlaying++
 
     if(this.currentPlaying == this.audioData.length ) this.restart()
-   this.update();
-   this.audio.play();
+    this.update();
+    this.audio.play();
  },
  update(){
     this.currentAudio = this.audioData[this.currentPlaying];
     this.title.innerText = this.currentAudio.title;
     this.artist.innerText =  this.currentAudio.artist;
-    this.audios.src = path(this.currentAudio.file);
+    this.audio.src = path(this.currentAudio.file);
     this.imagem.src = this.currentAudio.cover;
  },
  restart(){
